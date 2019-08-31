@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir lib --extensions '.ts' -w",
-    "json": "mkdir dist && node lib/index.js"
+    "json": "mkdir dist && node lib/index.js && cp src/_headers dist/_headers"
   },
   "dependencies": {
     "puppeteer": "^1.19.0"
